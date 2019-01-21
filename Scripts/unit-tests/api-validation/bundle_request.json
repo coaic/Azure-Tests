@@ -1,0 +1,72 @@
+{
+  "rules": [
+    {
+      "name": "Location must be Australia for all Virtual Machines",
+      "severity": "High",
+      "logic": "VirtualMachine should have region like 'australia%'",
+      "description": "",
+      "remediation": "",
+      "complianceTag": "EM-POC-TC-02-02",
+      "domain": "",
+      "priority": "",
+      "controlTitle": "",
+      "ruleId": ""
+    },
+    {
+      "name": "Virtual Machines can only have one assigned NIC",
+      "severity": "High",
+      "logic": "VirtualMachine should have nics length()=1",
+      "description": "",
+      "remediation": "",
+      "complianceTag": "EM-POC-TC-02-04",
+      "domain": "",
+      "priority": "",
+      "controlTitle": "",
+      "ruleId": ""
+    },
+    {
+      "name": "Location must be Australia for all Storage Accounts",
+      "severity": "High",
+      "logic": "StorageAccount should have region like 'australia%'",
+      "description": "",
+      "remediation": "",
+      "complianceTag": "EM-POC-TC-02-02",
+      "domain": "",
+      "priority": "",
+      "controlTitle": "",
+      "ruleId": ""
+    },
+    {
+      "name": "Only approved Linux images can be launched",
+      "severity": "High",
+      "logic": "VirtualMachine where operatingSystem like 'Linux%' should have machineImage.offer like 'CentOS%'",
+      "description": "",
+      "remediation": "",
+      "complianceTag": "EM-POC-TC-02-08-nix",
+      "domain": "",
+      "priority": "",
+      "controlTitle": "",
+      "ruleId": ""
+    },
+    {
+      "name": "Only approved Windows images can be launched",
+      "severity": "High",
+      "logic": "VirtualMachine where machineImage.offer like 'WindowsServer%' should have machineImage.publisher like 'MicrosoftWindowsServer%'",
+      "description": "",
+      "remediation": "",
+      "complianceTag": "EM-POC-TC-02-08-win",
+      "domain": "",
+      "priority": "",
+      "controlTitle": "",
+      "ruleId": ""
+    }
+  ],
+  "id": 40469,
+  "name": "az-cld-cmp-poc",
+  "description": "Azure Cloud Compliance PoC",
+  "hideInCompliance": false,
+  "minFeatureTier": "Premium",
+  "cloudVendor": "azure",
+  "version": 2,
+  "language": "en"
+}

@@ -1,0 +1,4 @@
+api_key="<<your API key>>"
+api_secret="<<your API secret>>"
+username="<<your user id/email address>>"
+password="<<your password - remember to escape bash special chars>>"
