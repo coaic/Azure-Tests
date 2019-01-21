@@ -1,6 +1,6 @@
 . .authentication
 url="https://api.dome9.com/v2"
-bundle_id=40469
+bundle_id=xxxxxxx
 set -x
 #
 curl -s -X GET ${url}/CompliancePolicy/${bundle_id} \
